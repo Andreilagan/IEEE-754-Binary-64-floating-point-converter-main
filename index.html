@@ -120,8 +120,6 @@
             let strMantissa;
             let strExponent;
             let hex;
-            console.log(mantissa);
-            console.log(exponent);
             /*Step 1: Check if positive or negative*/
             if(mantissa[0]==='-'){
                 strMantissa = mantissa.slice(1, mantissa.length);
@@ -136,7 +134,6 @@
 
             /*Checker: Zero*/
             if(nMantissa === 0){
-                console.log("zero");
                 strExponent = '00000000000';
                 strMantissa = '0000000000000000000000000000000000000000000000000000';
                 let hex = '0000000000000000';
@@ -208,12 +205,14 @@
 
             nExponent = dec2bin11(nExponent, 11);
             strMantissa = String(nMantissa);
-            
+
+            console.log(strMantissa);
             if(signBit == 1){
-                strMantissa = strMantissa.slice(3,strMantissa.length);
+                strMantissa = strMantissa.slice(2,strMantissa.length);
             }
             else
                 strMantissa = strMantissa.slice(2,strMantissa.length);
+            console.log(strMantissa);
             if(strMantissa.length > 52)
                 strMantissa = strMantissa.slice(0, 53);
             else{
