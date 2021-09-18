@@ -120,7 +120,8 @@
             let strMantissa;
             let strExponent;
             let hex;
-            
+            console.log(mantissa);
+            console.log(exponent);
             /*Step 1: Check if positive or negative*/
             if(mantissa[0]==='-'){
                 strMantissa = mantissa.slice(1, mantissa.length);
@@ -212,8 +213,7 @@
                 strMantissa = strMantissa.slice(3,strMantissa.length);
             }
             else
-                strMantissa = strMantissa.split('.')[1];
-
+                strMantissa = strMantissa.slice(2,strMantissa.length);
             if(strMantissa.length > 52)
                 strMantissa = strMantissa.slice(0, 53);
             else{
