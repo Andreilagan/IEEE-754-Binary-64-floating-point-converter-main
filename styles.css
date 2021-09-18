@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400&display=swap');
+body{
+    background-color: #D4F1F4;
+}
+.content{
+    height: 460px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.left-panel{
+    height: 460px;
+    width: 400px;
+    position: relative;
+    background-color: white;
+    padding: 15px;
+}
+.right-panel{
+    width: 400px;
+    position: relative;
+    display: block;
+}
+.title-text{
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #189AB4;
+}
+.mntext-exp{
+    display: flex;
+    flex-direction: row;
+}
+#exponentInput{
+    width: 92px;
+    margin: 1px;
+    display: block;
+    position: relative;
+    float: right;
+}
+.big-text{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 25px;
+    color: #189AB4;
+}
+.btn-copy{
+    border: 2px solid #36bf9b;
+    background-color: #36bf9b;
+    color: white;
+    width: 80px;
+    float: right;
+    position: relative;
+}
+.btn-convert{
+    border: 2px solid #189AB4;
+    background-color: #189AB4;
+    color: white; 
+    float: right;
+    width: 80px;
+    position: relative;
+}
+.btn-copy:hover{
+    border: 2px solid #36bf9b;
+    background-color: white;
+}
+.btn-convert:hover{
+    border: 2px solid #189AB4;
+    background-color: white;
+}
+.error-submit{
+    display: flex;
+    flex-direction: row;
+}
+.bintext-copy{
+    display: flex;
+    flex-direction: row;
+}
+.text-style{
+    font-family: 'Urbanist';
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+.text-bin{
+    width: 250px;
+    margin: 0%;
+    padding: 0%;
+}
+.mantissa-2{
+    display: flex;
+    flex-direction: row;
+}
+.times2{
+    zoom: 150%;
+    font-family: 'Urbanist';
+    font-weight: 400;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    margin-left: 2px;
+}
+.disabledtext{
+    width: 370px;
+    pointer-events: none;
+    background-color: #EBEBE4;
+}
+.cpy{
+    width: 300px;
+    margin-bottom: 5px;
+}
+.bintext-64{
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5px;
+}
+.cvt{
+    width: 370px;
+    margin-bottom: 5px;
+}
+.xpt{
+    width: 370px;
+    margin-bottom: 5px;
+}
+.expnt{
+    width: 40px;
+}
+.NaN-div{
+    display: flex;
+    flex-direction: row;
+}
+.checkcon{
+    margin: 0%;
+    margin-top: 8px;
+    width: 200px;
+    margin-left: 5px;
+}
+.disabledbox{
+    pointer-events: none;
+    background-color: #EBEBE4;
+}
+
+.error-hide{
+    visibility: hidden;
+    color: teal;
+}
+
+.error-show{
+    visibility: visible;
+}
+#error{
+    width: 400px;
+}
+.option-container{
+    margin-right: 3px;
+}
