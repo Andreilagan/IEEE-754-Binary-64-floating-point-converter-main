@@ -289,8 +289,11 @@
                         <div class="bintext-copy">
                             <p class="text-style bin-text64" >Binary-64</p>
                             <div class="cpy">
+                                <button type="button" id="btnCopy" onclick="copyToClipboard()" class="btn btn-copy float-right" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Copy
+                                </button>
                                 
-                                <button id="btnCopy" onclick="copyToClipboard()" type="button" class="btn btn-copy float-right" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Copied!">Copy</button>
+                                <!-- Modal -->
                             </div>
                         </div>
                         <fieldset>
@@ -310,5 +313,23 @@
             </div>
         </div>
     </form>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Copy</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            Copied to clipboard!
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
